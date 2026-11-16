@@ -3,10 +3,10 @@ resource "null_resource" "FoggyKitchenWebserver1HTTPD" {
  provisioner "remote-exec" {
         connection {
                 type     = "ssh"
-                user     = "opc"
+                user     = "ubuntu"
 		        host     = data.oci_core_vnic.FoggyKitchenWebserver1_VNIC1.private_ip_address
                 private_key = file(var.private_key_oci)
-                script_path = "/home/opc/myssh.sh"
+                script_path = "/home/ubuntu/myssh.sh"
                 agent = false
                 timeout = "10m"
                 bastion_host = data.oci_core_vnic.FoggyKitchenBastionServer_VNIC1.public_ip_address
