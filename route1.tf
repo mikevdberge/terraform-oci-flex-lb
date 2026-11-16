@@ -6,5 +6,6 @@ resource "oci_core_route_table" "FoggyKitchenRouteTableViaIGW" {
         destination = "0.0.0.0/0"
         destination_type  = "CIDR_BLOCK"
         #network_entity_id = oci_core_internet_gateway.FoggyKitchenInternetGateway.id
+        network_entity_id = "ocid1.internetgateway.oc1.eu-amsterdam-1.aaaaaaaalltuxoyrmogg6s5awblvpdo2goumk2d5kanlyg57lfbbcgs2c37a"
     }
 }
