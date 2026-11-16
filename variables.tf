@@ -16,11 +16,11 @@ variable "VCNname" {
 }
 
 variable "Shapes" {
- default = ["VM.Standard.E3.Flex"]
+ default = ["VM.Standard.E2.1.Micro"]
 }
 
 variable "OsImage" {
-  default = "Oracle-Linux-7.8-2020.05.26-0"
+  default = "Canonical-Ubuntu-26.04-Minimal-2026.11.05-0"
 }
 
 variable "webservice_ports" {
