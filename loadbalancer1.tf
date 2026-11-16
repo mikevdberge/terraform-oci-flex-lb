@@ -62,6 +62,6 @@ resource "oci_load_balancer_backend" "FoggyKitchenFlexPublicLoadBalancerBackend2
 
 
 output "FoggyKitchenFlexPublicLoadBalancer_Public_IP" {
-  value = [oci_load_balancer.FoggyKitchenFlexPublicLoadBalancer.ip_addresses]
+  value = [oci_load_balancer.FoggyKitchenFlexPublicLoadBalancer.ip_address_details]
 }
 
