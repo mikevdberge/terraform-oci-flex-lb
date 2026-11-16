@@ -11,7 +11,7 @@ resource "oci_load_balancer" "FoggyKitchenFlexPublicLoadBalancer" {
   shape          = "flexible"
   shape_details {
     minimum_bandwidth_in_mbps = 10
-    maximum_bandwidth_in_mbps = 100
+    maximum_bandwidth_in_mbps = 10
   }
 }
 
