@@ -16,7 +16,7 @@ resource "oci_load_balancer" "FoggyKitchenFlexPublicLoadBalancer" {
 }
 
 resource "oci_load_balancer_backendset" "FoggyKitchenFlexPublicLoadBalancerBackendset" {
-  name             = "FoggyKitchenFlexLBBackendset"
+  name             = "QHSEFlexLBBackendset"
   load_balancer_id = oci_load_balancer.FoggyKitchenFlexPublicLoadBalancer.id
   policy           = "ROUND_ROBIN"
 
