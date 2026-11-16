@@ -1,7 +1,7 @@
 resource "oci_load_balancer" "FoggyKitchenFlexPublicLoadBalancer" {
   compartment_id = oci_identity_compartment.FoggyKitchenCompartment.id 
   
-  display_name   = "FoggyKitchenFlexPublicLB"
+  display_name   = "QHSEFlexPublicLB"
   network_security_group_ids = [oci_core_network_security_group.FoggyKitchenWebSecurityGroup.id]
   
   subnet_ids     = [
