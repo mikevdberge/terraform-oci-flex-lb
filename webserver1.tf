@@ -16,7 +16,7 @@ resource "oci_core_instance" "FoggyKitchenWebserver1" {
      nsg_ids = [oci_core_network_security_group.FoggyKitchenWebSecurityGroup.id]
   }
   shape_config {
-      memory_in_gbs = 2
+      memory_in_gbs = 1
       ocpus = 1
   }
 }
