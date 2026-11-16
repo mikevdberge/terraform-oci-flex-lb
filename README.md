@@ -268,3 +268,4 @@ oci_identity_compartment.FoggyKitchenCompartment: Destruction complete after 0s
 
 Destroy complete! Resources: 27 destroyed.
 ```
+# terraform-oci-flex-lb
