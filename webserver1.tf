@@ -5,7 +5,7 @@ resource "oci_core_instance" "FoggyKitchenWebserver1" {
   shape = var.Shapes[0]
   source_details {
     source_type = "image"
-    source_id   = lookup(data.oci_core_images.OSImageLocal.images[0], "id")
+    source_id   = "ocid1.image.oc1.eu-amsterdam-1.aaaaaaaaysx7i46lof3tf6yjggl45klhy6523hvpuwewtih2l6xuo6wy5njq"
   }
   metadata = {
       ssh_authorized_keys = file(var.public_key_oci)
