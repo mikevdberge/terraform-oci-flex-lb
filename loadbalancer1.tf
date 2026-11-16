@@ -31,7 +31,7 @@ resource "oci_load_balancer_backendset" "FoggyKitchenFlexPublicLoadBalancerBacke
 
 resource "oci_load_balancer_listener" "FoggyKitchenFlexPublicLoadBalancerListener" {
   load_balancer_id         = oci_load_balancer.FoggyKitchenFlexPublicLoadBalancer.id
-  name                     = "FoggyKitchenFlexLBListener"
+  name                     = "QHSEFlexLBListener"
   default_backend_set_name = oci_load_balancer_backendset.FoggyKitchenFlexPublicLoadBalancerBackendset.name
   port                     = 80
   protocol                 = "HTTP"
