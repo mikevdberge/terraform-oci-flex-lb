@@ -1,7 +1,7 @@
 resource "oci_core_instance" "FoggyKitchenWebserver1" {
   availability_domain = lookup(data.oci_identity_availability_domains.ADs.availability_domains[0], "name")
   compartment_id = oci_identity_compartment.FoggyKitchenCompartment.id
-  display_name = "FoggyKitchenWebServer1"
+  display_name = "oci-compute-idp-1"
   shape = var.Shapes[0]
   source_details {
     source_type = "image"
