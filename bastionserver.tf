@@ -1,7 +1,7 @@
 resource "oci_core_instance" "FoggyKitchenBastionServer" {
   availability_domain = lookup(data.oci_identity_availability_domains.ADs.availability_domains[0], "name")
   compartment_id = oci_identity_compartment.FoggyKitchenCompartment.id
-  display_name = "FoggyKitchenBastionServer"
+  display_name = "qhse-bastion-server"
   shape = var.Shapes[0]
   source_details {
     source_type = "image"
