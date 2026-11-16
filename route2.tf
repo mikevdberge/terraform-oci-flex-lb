@@ -5,7 +5,7 @@ resource "oci_core_route_table" "FoggyKitchenRouteTableViaNAT" {
     route_rules {
         destination = "0.0.0.0/0"
         destination_type  = "CIDR_BLOCK"
-        network_entity_id = oci_core_nat_gateway.FoggyKitchenNATGateway.id
+        #network_entity_id = oci_core_nat_gateway.FoggyKitchenNATGateway.id
     }
 }
 
