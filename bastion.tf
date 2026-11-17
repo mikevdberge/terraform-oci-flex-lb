@@ -1,5 +1,5 @@
 resource "oci_bastion_bastion" "main" {
-  compartment_id  = var.compartment_id
+  compartment_id  = oci_identity_compartment.FoggyKitchenCompartment.id
   target_subnet_id = oci_core_subnet.FoggyKitchenBastionSubnet.id
 
   name = "idpbastion"
