@@ -29,7 +29,7 @@ resource "oci_bastion_session" "ssh" {
  
   target_resource_details {
     session_type = "MANAGED_SSH"
-    target_resource_id = oci_core_instance.idp.id
+    target_resource_id = oci_core_instance.FoggyKitchenWebserver1.id
     target_resource_operating_system_user_name = "ubuntu"
     target_resource_port = 22
   }
