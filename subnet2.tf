@@ -1,6 +1,6 @@
 resource "oci_core_subnet" "FoggyKitchenLBSubnet" {
   cidr_block = "10.0.2.0/24"
-  display_name = "FoggyKitchenLBSubnet"
+  display_name = "QHSELBSubnet"
   dns_label = "FoggyKitchenN1"
   compartment_id = oci_identity_compartment.FoggyKitchenCompartment.id
   vcn_id = oci_core_virtual_network.FoggyKitchenVCN.id
