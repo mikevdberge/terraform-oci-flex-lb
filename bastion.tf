@@ -1,6 +1,6 @@
 resource "oci_bastion_bastion" "main" {
   compartment_id  = var.compartment_id
-  target_subnet_id = oci_core_subnet.private.id
+  target_subnet_id = oci_core_subnet.FoggyKitchenBastionSubnet.id
 
   name = "idp-bastion"
 
