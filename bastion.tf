@@ -1,4 +1,4 @@
-resource "oci_bastion_bastion" "main" {
+resource "oci_bastion_bastion" "idp" {
   compartment_id  = oci_identity_compartment.FoggyKitchenCompartment.id
   target_subnet_id = oci_core_subnet.FoggyKitchenBastionSubnet.id
 
