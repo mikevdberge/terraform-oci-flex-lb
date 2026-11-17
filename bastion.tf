@@ -24,7 +24,7 @@ resource "oci_bastion_session" "ssh" {
   session_ttl_in_seconds = 10800
  
   key_details {
-    public_key_content = file(var.ssh_public_key_path)
+    public_key_content = file(var.public_key_oci)
   }
  
   target_resource_details {
